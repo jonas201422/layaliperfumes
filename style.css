@@ -19,6 +19,17 @@
   --gradient: radial-gradient(circle at 20% 20%, rgba(215, 161, 94, 0.18), transparent 35%),
               radial-gradient(circle at 80% 0%, rgba(42, 21, 32, 0.24), transparent 40%),
               linear-gradient(145deg, #2a1520, #3b1f2f 40%, #1a0d16);
+  --burgundy: #3f1f2b;
+  --burgundy-dark: #2b121c;
+  --gold: #c7a160;
+  --beige: #f5f0e9;
+  --sand: #fff8f0;
+  --text: #2d1f1f;
+  --muted: #7d6b6b;
+  --radius: 18px;
+  --shadow: 0 20px 45px rgba(47, 24, 33, 0.18);
+  --glass: rgba(255, 255, 255, 0.1);
+  --gradient: linear-gradient(135deg, rgba(63, 31, 43, 0.92), rgba(199, 161, 96, 0.35));
 }
 
 * { box-sizing: border-box; }
@@ -48,7 +59,15 @@ body::before {
   z-index: 0;
 }
 
-section { position: relative; z-index: 1; }
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: url('https://grainy-gradients.vercel.app/noise.svg');
+  opacity: 0.25;
+  z-index: 0;
+}
 
 /* ======================== Header ======================== */
 .site-header {
