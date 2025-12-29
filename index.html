@@ -4,170 +4,242 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Layali Emirates Perfume | Graben 32, Linz</title>
-  <!-- Webfonts for luxurious typography -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header & Navigation -->
   <header class="site-header">
-    <div class="logo">
-      <img src="perfumes/logo.jpg" alt="Layali Emirates Perfume Logo" />
+    <div class="logo-mark">
+      <img src="perfumes/logo.jpg" alt="Layali Emirates Perfume" />
+      <div class="wordmark">
+        <span class="lang-ar">ليالي الإمارات</span>
+        <span class="lang-de">Layali Emirates</span>
+      </div>
     </div>
-    <div class="language-switcher" aria-label="Sprachauswahl">
-      <button class="lang-btn" data-lang="de">DE</button>
-      <button class="lang-btn" data-lang="ar">AR</button>
+    <div class="top-actions">
+      <div class="language-switcher" aria-label="Sprachauswahl">
+        <button class="lang-btn active" data-lang="ar">AR</button>
+        <button class="lang-btn" data-lang="de">DE</button>
+      </div>
+      <button class="nav-toggle" aria-label="Menü öffnen / schließen" aria-expanded="false">☰</button>
     </div>
     <nav class="main-nav" aria-label="Primary Navigation">
-      <button class="nav-toggle" aria-label="Menü öffnen / schließen" aria-expanded="false">☰</button>
-      <div class="nav-links">
-        <ul class="lang-block lang-ar">
-          <li><a href="#home">الرئيسية</a></li>
-          <li><a href="#products">المنتجات</a></li>
-          <li><a href="#promo">العروض</a></li>
-          <li><a href="#about">من نحن</a></li>
-          <li><a href="#contact">تواصل معنا</a></li>
-        </ul>
-        <ul class="lang-block lang-de">
-          <li><a href="#home">Start</a></li>
-          <li><a href="#products">Produkte</a></li>
-          <li><a href="#promo">Angebote</a></li>
-          <li><a href="#about">Über uns</a></li>
-          <li><a href="#contact">Kontakt</a></li>
-        </ul>
-      </div>
+      <ul class="nav-links">
+        <li><a href="#home" class="lang-ar">الرئيسية</a><a href="#home" class="lang-de">Start</a></li>
+        <li><a href="#signature" class="lang-ar">التوقيع</a><a href="#signature" class="lang-de">Signature</a></li>
+        <li><a href="#collection" class="lang-ar">التشكيلة</a><a href="#collection" class="lang-de">Kollektion</a></li>
+        <li><a href="#experience" class="lang-ar">التجربة</a><a href="#experience" class="lang-de">Erlebnis</a></li>
+        <li><a href="#visit" class="lang-ar">الزيارة</a><a href="#visit" class="lang-de">Besuch</a></li>
+        <li><a href="#contact" class="lang-ar">تواصل</a><a href="#contact" class="lang-de">Kontakt</a></li>
+      </ul>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-bg" role="img" aria-label="Sanddünen mit Parfum und Kamel"></div>
-    <div class="hero-overlay">
-      <div class="floating-ornaments" aria-hidden="true">
-        <span></span><span></span><span></span>
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow lang-ar">عطور بتوقيع إماراتي · غراتن 32 · لينز</p>
+          <p class="eyebrow lang-de">Emirati Signature Scents · Graben 32 · Linz</p>
+          <h1 class="hero-title lang-ar">رحلة فاخرة في عالم العطور الشرقية</h1>
+          <h1 class="hero-title lang-de">Eine luxuriöse Reise in die Welt orientalischer Düfte</h1>
+          <p class="hero-lead lang-ar">نمزج بين عبق العود والورد الدمشقي مع تقنيات استخلاص أوروبية لنقدم لكِ عطراً يلامس الذاكرة ويبقى أثراً.</p>
+          <p class="hero-lead lang-de">Wir verbinden Oud und Damaszener Rose mit europäischer Präzision, um Düfte zu schaffen, die Erinnerungen wachrufen und bleiben.</p>
+          <div class="hero-actions">
+            <a class="btn primary lang-ar" href="#collection">اكتشف التشكيلة</a>
+            <a class="btn primary lang-de" href="#collection">Kollektion entdecken</a>
+            <a class="btn ghost lang-ar" href="#visit">حجز تجربة</a>
+            <a class="btn ghost lang-de" href="#visit">Termin buchen</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <span class="stat">24</span>
+              <p class="lang-ar">خلاصة عود حصرية</p>
+              <p class="lang-de">Exklusive Oud-Essenzen</p>
+            </div>
+            <div>
+              <span class="stat">12</span>
+              <p class="lang-ar">مزيج توقيع</p>
+              <p class="lang-de">Signature Blends</p>
+            </div>
+            <div>
+              <span class="stat">4.9★</span>
+              <p class="lang-ar">تقييم الزوار</p>
+              <p class="lang-de">Gäste-Bewertung</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="glass-card">
+            <img src="perfumes/hero.png" alt="Layali Emirates Duft" loading="lazy" />
+            <div class="glass-caption">
+              <p class="lang-ar">تصاميم مستوحاة من الكثبان والذهب الوردي</p>
+              <p class="lang-de">Design inspiriert von Dünen & Roségold</p>
+            </div>
+          </div>
+          <div class="floating-chips" aria-hidden="true">
+            <span>Oud</span><span>Amber</span><span>Rose</span><span>Musk</span>
+          </div>
+        </div>
       </div>
-      <p class="eyebrow lang-ar">ليالي للعطور · غراتن 32 · لينز</p>
-      <p class="eyebrow lang-de">Layali Emirates Perfume · Graben 32 · Linz</p>
-      <h1 class="arabic-logo animate-fadein lang-ar">ليالي للعطور</h1>
-      <h1 class="arabic-logo animate-fadein lang-de">Layali Emirates Perfume</h1>
-      <p class="hero-lead lang-ar">اكتشف روائح الفخامة المستوحاة من سحر الشرق الأوسط، مصنوعة بحرفية عالية في قلب لينز.</p>
-      <p class="hero-lead lang-de">Entdecken Sie luxuriöse Düfte mit orientalischer Seele, meisterhaft kreiert im Herzen von Linz.</p>
-      <div class="hero-actions">
-        <a class="cta lang-ar" href="#products">اكتشف التشكيلة</a>
-        <a class="cta ghost lang-de" href="#products">Kollektion entdecken</a>
+    </section>
+
+    <section id="signature" class="signature section">
+      <div class="section-head">
+        <p class="kicker lang-ar">حرفية إماراتية</p>
+        <p class="kicker lang-de">Emirati Craft</p>
+        <h2 class="lang-ar">توليفات مخصصة لكل لحظة</h2>
+        <h2 class="lang-de">Kompositionen für jeden Moment</h2>
       </div>
-      <div class="hero-badges">
-        <div class="badge">
-          <span class="dot"></span>
-          <p class="lang-ar">خدمة تصميم عطور خاصة</p>
-          <p class="lang-de">Bespoke Duftdesign</p>
+      <div class="signature-grid">
+        <article class="signature-card">
+          <div class="card-top">
+            <h3 class="lang-ar">جلسة توقيع شخصية</h3>
+            <h3 class="lang-de">Persönliche Signature-Session</h3>
+            <p class="lang-ar">اختر نوتاتك المفضلة مع خبير العطور لدينا لصنع رائحة لا تشبه سواك.</p>
+            <p class="lang-de">Wählen Sie Ihre liebsten Noten gemeinsam mit unserem Parfumexperten und kreieren Sie Ihren eigenen Duft.</p>
+          </div>
+          <div class="pill-row"><span>Oud Royal</span><span>Damask Rose</span><span>Sandalwood</span></div>
+        </article>
+        <article class="signature-card">
+          <div class="card-top">
+            <h3 class="lang-ar">طبقات فاخرة تدوم</h3>
+            <h3 class="lang-de">Luxuriöse Layering-Rituale</h3>
+            <p class="lang-ar">روائح مركّزة مع بخور فاخر لثبات يدوم حتى 12 ساعة.</p>
+            <p class="lang-de">Konzentrierte Essenzen mit edlem Weihrauch für Haltbarkeit bis zu 12 Stunden.</p>
+          </div>
+          <div class="pill-row"><span>Amber Resin</span><span>Frankincense</span><span>White Musk</span></div>
+        </article>
+        <article class="signature-card highlight">
+          <div class="card-top">
+            <h3 class="lang-ar">إصدار بوتيك محدود</h3>
+            <h3 class="lang-de">Limitierte Boutique Edition</h3>
+            <p class="lang-ar">كل زجاجة مرقمة يدوياً وترافقها قصة الإلهام وكتيب عناية.</p>
+            <p class="lang-de">Jede Flasche ist handnummeriert und enthält Inspiration & Pflegehinweise.</p>
+          </div>
+          <div class="pill-row"><span>No. 32</span><span>Rose Gold</span><span>Collector</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="collection" class="collection section">
+      <div class="section-head">
+        <p class="kicker lang-ar">مختارات جاهزة</p>
+        <p class="kicker lang-de">Kuratiertes Sortiment</p>
+        <h2 class="lang-ar">روائح تعكس ضوء الصحراء</h2>
+        <h2 class="lang-de">Düfte im Licht der Wüste</h2>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="img-wrap"><img src="perfumes/style.png" alt="Latafa Pride Gold" loading="lazy" /></div>
+          <div class="product-copy">
+            <div class="pill">Oud · Amber</div>
+            <h3>Latafa Pride Gold</h3>
+            <p class="lang-ar">دفء العنبر مع لمسة زهرية تعكس فخامة الليل في الخليج.</p>
+            <p class="lang-de">Warmer Amber mit floraler Note, inspiriert von Nächten am Golf.</p>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="img-wrap"><img src="perfumes/pic.png" alt="Layali Signature" loading="lazy" /></div>
+          <div class="product-copy">
+            <div class="pill">Rose · Musk</div>
+            <h3>Layali Signature</h3>
+            <p class="lang-ar">توليفة مسكية حريرية مع نفحات ورد دمشق العتيقة.</p>
+            <p class="lang-de">Seidige Moschuskomposition mit Hauch alter Damaskus-Rose.</p>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="img-wrap"><img src="perfumes/style3.png" alt="Boutique Edition" loading="lazy" /></div>
+          <div class="product-copy">
+            <div class="pill">Saffron · Smoke</div>
+            <h3>Boutique Edition</h3>
+            <p class="lang-ar">إصدار محدود بنفحات الزعفران والدخان الأبيض لعمق مترف.</p>
+            <p class="lang-de">Limitierte Edition mit Safran und hellem Rauch für opulente Tiefe.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="experience section">
+      <div class="experience-card">
+        <div>
+          <p class="kicker lang-ar">تجربة داخلية</p>
+          <p class="kicker lang-de">In-Store Experience</p>
+          <h2 class="lang-ar">غرفة عطور بإضاءة خافتة وموسيقى عربية</h2>
+          <h2 class="lang-de">Duftzimmer mit sanftem Licht & arabischer Musik</h2>
+          <p class="lang-ar">استمع لشرح الخبراء بينما تتعرف على طبقات العطر عبر محطات تذوق حسية وإعداد زجاجة بتفاصيل محفورة.</p>
+          <p class="lang-de">Lassen Sie sich von unseren Experten führen, testen Sie Duftstationen und personalisieren Sie Ihre Flasche mit Gravur.</p>
+          <div class="chips"><span>Gravur</span><span>Private Tasting</span><span>Hospitality</span></div>
         </div>
-        <div class="badge">
-          <span class="dot"></span>
-          <p class="lang-ar">خلاصات عود فاخرة</p>
-          <p class="lang-de">Erlesene Oud-Essenzen</p>
+        <div class="media">
+          <img src="perfumes/style2.png" alt="In-Store Experience" loading="lazy" />
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Promo Banner -->
-  <section id="promo" class="promo section-padding animate-scroll">
-    <div class="section-title">
-      <p class="kicker lang-ar">عرض حصري</p>
-      <p class="kicker lang-de">Exklusives Angebot</p>
-      <h2 class="lang-ar">اشترِ عطرين واحصل على الثالث مجاناً</h2>
-      <h2 class="lang-de">Kaufe zwei Düfte und erhalte den dritten gratis</h2>
-    </div>
-    <div class="image-frame">
-      <img src="perfumes/style3.png" alt="Angebot 2 kaufen 1 gratis" loading="lazy" />
-    </div>
-  </section>
-
-  <!-- Quote Section -->
-  <section class="quote section-padding animate-scroll">
-    <div class="image-frame subtle-shadow">
-      <img src="perfumes/style2.png" alt="Zitat von Christian Dior" loading="lazy" />
-    </div>
-  </section>
-
-  <!-- Product Gallery -->
-  <section id="products" class="products section-padding">
-    <div class="section-title">
-      <p class="kicker lang-ar">تشكيلة مختارة</p>
-      <p class="kicker lang-de">Kuratiertes Sortiment</p>
-      <h2 class="lang-ar">روائح توقظ الذاكرة</h2>
-      <h2 class="lang-de">Düfte, die Erinnerungen wecken</h2>
-    </div>
-    <div class="product-grid">
-      <article class="product-card animate-zoom">
-        <div class="product-image"><img src="perfumes/style.png" alt="Latafa Pride Gold" loading="lazy" /></div>
-        <div class="product-info">
-          <h3>Latafa Pride Gold</h3>
-          <p class="lang-ar">عطر ذهبي بنفحات العنبر والعود يعبّر عن فخامة الشرق.</p>
-          <p class="lang-de">Goldener Duft mit Amber und Oud, der orientalische Eleganz verkörpert.</p>
+    <section id="visit" class="visit section">
+      <div class="visit-card">
+        <div class="visit-copy">
+          <p class="kicker lang-ar">الموقع</p>
+          <p class="kicker lang-de">Adresse</p>
+          <h2 class="lang-ar">غراتن 32 · لينز</h2>
+          <h2 class="lang-de">Graben 32 · Linz</h2>
+          <p class="lang-ar">على بُعد خطوات من البلدة القديمة، استقبلنا بفنجان قهوة عربية وأضواء دافئة.</p>
+          <p class="lang-de">Nur Schritte von der Altstadt entfernt – wir begrüßen Sie mit arabischem Kaffee und warmem Licht.</p>
+          <div class="info-grid">
+            <div>
+              <h4 class="lang-ar">ساعات العمل</h4><h4 class="lang-de">Öffnungszeiten</h4>
+              <p class="lang-ar">الإثنين – السبت: 10:00 - 19:00</p>
+              <p class="lang-de">Mo – Sa: 10:00 - 19:00</p>
+            </div>
+            <div>
+              <h4 class="lang-ar">تواصل</h4><h4 class="lang-de">Kontakt</h4>
+              <p>+43 123 456 789</p>
+              <p>contact@layali-emirates.at</p>
+            </div>
+            <div>
+              <h4 class="lang-ar">مواعيد خاصة</h4><h4 class="lang-de">Private Slots</h4>
+              <p class="lang-ar">جلسات خارج الدوام للحجوزات المسبقة.</p>
+              <p class="lang-de">After-hours Sessions mit Voranmeldung.</p>
+            </div>
+          </div>
         </div>
-      </article>
-      <article class="product-card animate-zoom">
-        <div class="product-image"><img src="perfumes/pic.png" alt="Layali Signature" loading="lazy" /></div>
-        <div class="product-info">
-          <h3>Layali Signature</h3>
-          <p class="lang-ar">توليفة زهرية مسكية تعكس لمسة ليالي الإمارات العريقة.</p>
-          <p class="lang-de">Florale, moschusbetonte Komposition mit unverkennbarer Layali-Note.</p>
+        <div class="visit-cta">
+          <div class="badge">VIP</div>
+          <p class="lang-ar">احجز موعدك الخاص واستلم عطرك خلال 24 ساعة.</p>
+          <p class="lang-de">Buchen Sie Ihren privaten Slot und erhalten Sie Ihren Duft binnen 24h.</p>
+          <a class="btn primary full lang-ar" href="https://wa.me/123456789" target="_blank" rel="noreferrer">حجز عبر واتساب</a>
+          <a class="btn primary full lang-de" href="https://wa.me/123456789" target="_blank" rel="noreferrer">Über WhatsApp buchen</a>
         </div>
-      </article>
-    </div>
-  </section>
+      </div>
+    </section>
+  </main>
 
-  <!-- About Section -->
-  <section id="about" class="about section-padding animate-scroll">
-    <div class="about-card">
-      <h2 class="lang-ar">من نحن</h2>
-      <h2 class="lang-de">Über uns</h2>
-      <p class="lang-ar">في قلب لينز، نقدم لكم تجربة عطرية تمزج بين الرفاهية الأوروبية وروح الشرق الأوسط. تأسست Layali Emirates Perfume في Graben 32 لتكون وجهتكم الأولى لعطور انتقائية مصممة لتبقى في الذاكرة.</p>
-      <p class="lang-de">Im Herzen von Linz vereinen wir europäische Raffinesse mit der Seele des Nahen Ostens. Layali Emirates Perfume in der Graben 32 ist Ihre Adresse für charakterstarke Düfte, die bleiben.</p>
-      <ul class="highlights">
-        <li class="lang-ar">تركيبات عالية التركيز تدوم طويلاً</li>
-        <li class="lang-ar">مستخلصات طبيعية وبخور فاخر</li>
-        <li class="lang-ar">تجربة شراء مميزة بلمسة ضيافة عربية</li>
-        <li class="lang-de">Langhaftende, hochkonzentrierte Kompositionen</li>
-        <li class="lang-de">Natürliche Essenzen und edler Weihrauch</li>
-        <li class="lang-de">Einkaufserlebnis mit arabischer Gastfreundschaft</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Footer & Contact -->
   <footer id="contact" class="site-footer">
-    <div class="footer-content">
-      <div class="footer-brand">
-        <img src="perfumes/logo.jpg" alt="Layali Logo" />
+    <div class="footer-brand">
+      <img src="perfumes/logo.jpg" alt="Layali Emirates" />
+      <div>
         <p class="lang-ar">ليالي للعطور · Graben 32 · Linz</p>
         <p class="lang-de">Layali Emirates Perfume · Graben 32 · Linz</p>
       </div>
-      <div class="footer-links">
-        <h3 class="lang-ar">تابعنا</h3>
-        <h3 class="lang-de">Folgen Sie uns</h3>
-        <div class="social-links">
-          <a href="https://www.instagram.com/layali.emiratesperfume" target="_blank" rel="noreferrer">Instagram</a>
-          <a href="https://www.facebook.com/profile.php?id=61582074791659" target="_blank" rel="noreferrer">Facebook</a>
-          <a href="https://wa.me/123456789" target="_blank" rel="noreferrer">WhatsApp</a>
-        </div>
-      </div>
-      <div class="footer-contact">
-        <h3 class="lang-ar">تواصل معنا</h3>
-        <h3 class="lang-de">Kontakt</h3>
-        <p class="lang-ar">الهاتف: +43 123 456 789</p>
-        <p class="lang-de">Telefon: +43 123 456 789</p>
-        <p class="lang-ar">البريد: contact@layali-emirates.at</p>
-        <p class="lang-de">E-Mail: contact@layali-emirates.at</p>
+    </div>
+    <div class="footer-links">
+      <h3 class="lang-ar">تابعنا</h3>
+      <h3 class="lang-de">Folgen Sie uns</h3>
+      <div class="social-links">
+        <a href="https://www.instagram.com/layali.emiratesperfume" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61582074791659" target="_blank" rel="noreferrer">Facebook</a>
+        <a href="https://wa.me/123456789" target="_blank" rel="noreferrer">WhatsApp</a>
       </div>
     </div>
-    <p class="footer-bottom lang-ar">© 2025 Layali Emirates Perfume – جميع الحقوق محفوظة.</p>
-    <p class="footer-bottom lang-de">© 2025 Layali Emirates Perfume – Alle Rechte vorbehalten.</p>
+    <div class="footer-notes">
+      <p class="lang-ar">© 2025 جميع الحقوق محفوظة · تصميم بوتيك</p>
+      <p class="lang-de">© 2025 Alle Rechte vorbehalten · Boutique Design</p>
+    </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="script.js"></script>
 </body>
 </html>
