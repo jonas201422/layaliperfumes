@@ -1,45 +1,27 @@
-// Navigation toggle and language switcher
-const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelector('.nav-links');
-const langButtons = document.querySelectorAll('.lang-btn');
+document.addEventListener("DOMContentLoaded", () => {
+    
+    // --- Scroll Animation Observer ---
+    // Elemente erscheinen sanft, wenn sie ins Bild gescrollt werden
+    const observerOptions = {
+        threshold: 0.1 // 10% des Elements müssen sichtbar sein
+    };
 
-const toggleNav = () => {
-  const isOpen = navLinks.classList.toggle('show');
-  navToggle.setAttribute('aria-expanded', isOpen);
-};
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                // Optional: Observer stoppen nach einmaligem Erscheinen
+                // observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
 
-navToggle?.addEventListener('click', toggleNav);
+    const scrollElements = document.querySelectorAll('.scroll-reveal');
+    scrollElements.forEach(el => observer.observe(el));
 
-navLinks?.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('show');
-    navToggle?.setAttribute('aria-expanded', 'false');
-  });
+    // --- Mobile Menu Toggle ---
+    window.toggleMenu = function() {
+        const nav = document.querySelector('.nav-links');
+        nav.classList.toggle('active');
+    };
 });
-
-function setLanguage(lang) {
-  const isArabic = lang === 'ar';
-  document.documentElement.lang = lang;
-  document.documentElement.dir = isArabic ? 'rtl' : 'ltr';
-
-  document.querySelectorAll('.lang-ar').forEach(el => {
-    el.style.display = isArabic ? '' : 'none';
-  });
-
-  document.querySelectorAll('.lang-de').forEach(el => {
-    el.style.display = isArabic ? 'none' : '';
-  });
-
-  langButtons.forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.lang === lang);
-  });
-
-  navLinks?.classList.remove('show');
-  navToggle?.setAttribute('aria-expanded', 'false');
-}
-
-langButtons.forEach(btn => {
-  btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
-});
-
-setLanguage('ar');
